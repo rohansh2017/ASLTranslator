@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project is a real-time American Sign Language (ASL) Alphabet Translator that uses a webcam to recognize hand gestures and translate them into corresponding letters. It leverages MediaPipe Hands for hand tracking and TensorFlow for gesture classification.
+This project is a real-time American Sign Language (ASL) Alphabet Translator that uses a webcam to recognize hand gestures and translate them into corresponding letters. It leverages MediaPipe Hands for hand tracking and TensorFlow for gesture classification. This is essentially my first foray into a larger-scale project, and I really want to take the time to develop this in the future.
 
 ## 🚀 Features
 
