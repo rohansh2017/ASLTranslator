@@ -15,6 +15,12 @@ while cap.isOpened():
     frame = cv2.flip(frame, 1)
     rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     
+    result = hands.process(rgb_frame)
+    
+    # Draw hand landmarks
+    if result.multi_hand_landmarks:
+        for hand_landmarks in result.multi_hand_landmarks:
+            mp_drawing.draw_landmarks(frame, hand_landmarks, mp_hands.HAND_CONNECTIONS)
     
     cv2.imshow("ASL Hand Tracking", frame)
     
