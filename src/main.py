@@ -22,7 +22,7 @@ while cap.isOpened():
         for hand_landmarks in result.multi_hand_landmarks:
             mp_drawing.draw_landmarks(frame, hand_landmarks, mp_hands.HAND_CONNECTIONS)
     
-    cv2.imshow("ASL Hand Tracking", frame)
+    cv2.imshow("ASL Hand Tracking", frame) 
     
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
